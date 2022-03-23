@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es"> 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mascotas Felices</title> <!-- Habría que agregar un slogan -->
+    <link rel="shortcut icon" href="../img/logomascotas.ico" type="image/x-icon"> <!-- Favicon -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Orbitron&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- Inicio Logo y Nav --> 
+<header class="header">
+    <img src="../img/logomascotas.jpg" alt="Logo" class="header__logo"/>
+    <h2 class="header__titulo">¡Bienvenido a <span>Mascotas Felices</span>!</h2>
+    <div class="header__buscador">
+        <input class="header__buscador--buscar" type="text" placeholder="Buscá tu producto">
+        <button class="header__buscador--boton">Buscar</button>
+    </div>
+    <nav class="header__navbar">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="#">Comprar</a>
+                <ul class="submenu">
+                    <li><a href="../pages/alimentos.html">Alimentos</a></li>
+                    <li><a href="../pages/accesorios.html">Accesorios</a></li>
+                </ul>
+            </li>
+            <li><a href="../pages/adopta.html">Adopta</a></li>
+            <li><a href="../pages/contacto.html">Contacto</a></li>
+    </nav>
+    <hr>
+</header>
+<!-- Fin Logo y Nav -->
+<main>
+    <section class="contacto__seccion">
+        <h3 class="contenido__encabezado">¡Contactate con nosotros!</h3>
+            <p class="contenido__encabezado--parrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, officia neque? Dolorem incidunt mollitia quas sed ducimus temporibus exercitationem eum facilis, voluptatum sunt, consectetur repudiandae iure esse qui ipsum a ex repellat, magni quisquam culpa doloremque saepe iusto dolores porro. Repellat, saepe fuga fugiat officiis repellendus eaque odit maiores necessitatibus?</p>
+    </section>
+    <!-- Formulario -->
+    <form action="" class="formulariocontacto">
+        <!-- Nombre de persona -->
+        <label for="nombre">Nombre:</label>
+            <input type="text" placeholder="Ingresá tu nombre" value="" name="">
+        <br>
+        <!-- Correo -->
+        <label for="nombre">Correo:</label>
+            <input type="email" name="" id="" placeholder="Ingresá tu correo" value="">
+        <br>
+        <!-- Contraseña -->
+        <label for="nombre">Contraseña:</label>
+            <input type="password" name="" id="" placeholder="Ingresá tu contraseña" value="">
+        <br>
+        <!-- Mascota  -->
+        <label for="mascota">Mascota:</label>
+        <select name="mascota" id="">
+            <option value="perro">Perro</option>
+            <option value="gato">Gato</option>
+            <option value="otra">Otra</option>
+        </select>
+        <br>
+        <!-- Dejar mensaje -->
+        <label for="nombre">Mensaje:</label>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Dejá un mensaje acá"></textarea>
+        <br>
+        <!-- CHECKBOX -- Varias opciones -->
+        <input type="checkbox" name="" id="" value="1"> Deseo recibir información sobre mascotas
+        <br>
+        <!-- Boton resetear -->
+        <input class="tabla__boton" type="reset" value="Limpiar formulario">
+        <!-- Boton enviar -->
+        <input class="tabla__boton"type="submit" value="Enviar formulario">
+
+    </form> 
+</main>
+<!-- Fin Formulario -->
+<!-- Inicio Footer -->
+<footer class="footer">
+    <hr>
+    <h4>Todos los derechos reservados</h4>
+    <p>Damian Ferrara</p>
+</footer>
+<!-- Fin Footer -->
+
+
+
+</body>
+</html>
