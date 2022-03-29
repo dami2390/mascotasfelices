@@ -13,53 +13,62 @@
 </head>
 <body>
 
-<!-- Inicio Logo y Nav --> 
-<header class="header">
-    <img src="img/logomascotas.jpg" alt="Logo" class="header__logo"/>
-    <h2 class="header__titulo">¡Bienvenido a <span>Mascotas Felices</span>!</h2>
-    <div class="header__buscador">
-        <input class="header__buscador--buscar" type="text" placeholder="Buscá tu producto">
-        <button class="header__buscador--boton">Buscar</button>
-    </div>
-    <nav class="header__navbar">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="#">Comprar</a>
-                <ul class="submenu">
-                    <li><a href="pages/alimentos.html">Alimentos</a></li>
-                    <li><a href="pages/accesorios.html">Accesorios</a></li>
-                </ul>
-            </li>
-            <li><a href="pages/adopta.html">Adopta</a></li>
-            <li><a href="pages/contacto.html">Contacto</a></li>
-    </nav>
-    
-</header> 
-<hr>
-<!-- Fin Logo y Nav -->
+    <!-- Inicio Logo y Nav --> 
+    <header class="header">
+        <a href="#index.html"><img src="img/logomascotas.jpg" alt="Logo" class="header__logo"/></a>
+        <h2 class="header__titulo">¡Bienvenido a<span>Mascotas Felices!</span></h2>
+        <div class="header__buscador">
+            <input class="header__buscador--buscar" type="text" placeholder="Buscá tu producto">
+            <button class="header__buscador--boton">Buscar</button>
+        </div>
+        <nav class="header__navbar">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#">Comprar</a>
+                    <ul class="submenu">
+                        <li><a href="pages/alimentos.html">Alimentos</a></li>
+                        <li><a href="pages/accesorios.html">Accesorios</a></li>
+                    </ul>
+                </li>
+                <li><a href="pages/adopta.html">Adopta</a></li>
+                <li><a href="pages/contacto.html">Contacto</a></li>
+        </nav>
+        
+    </header> 
 
-<!-- Este va a ser mi carousel -->
-<main>
-    <section> 
-        <img class="carousel" src="img/carousel.jpg" alt="carousel">
-        <hr>
-    </section>
+    <!-- Fin Logo y Nav -->
 
-    <!-- Sección "Nosotros" -->
-    <section class="nosotros__img">
-        <h1>Nosotros</h1>
-        <img  src="img/mascotasnoticia.jpg" alt="mascotasnoticia">
-        <h4>Lorem dolor, sit amet consectetur adipisicing elit. Voluptate atque alias quaerat, assumenda sed officia sequi quas corrupti in et quia dolorem hic quod perspiciatis impedit velit consequuntur repellendus illo modi reprehenderit nihil necessitatibus temporibus a. Itaque deserunt iure exercitationem eius placeat tenetur possimus illo nisi enim eveniet veritatis veniam quis blanditiis quas eos quod eaque cumque, corrupti eum libero vero nihil autem cupiditate officia. Molestias cupiditate veniam quae facilis tempore recusandae architecto sit ullam dignissimos enim officiis expedita rerum dicta, amet, eos natus? Voluptates dolores magni iure cupiditate sed temporibus distinctio in neque deleniti? Ducimus voluptates obcaecati cupiditate iusto?</h4>
-    </section>
-</main>
-<!-- Fin Sección "Nosotros" -->
+        <!-- Este va a ser mi carousel -->
+    <main class="principal">
+        <section class="principal__carousel"> 
+            <img class="principal__carousel--img" src="img/carousel.jpg" alt="carousel">
+            
+        </section>
+        <!-- Sección "Nosotros" -->
+        
+        <section class="principal__nosotros">
+            <div class="principal__nosotros--img">
+                <h1>Nosotros</h1>
+                <img  src="img/mascotasnoticia.jpg" alt="mascotasnoticia">
+                <aside >Lorem dolor, sit amet consectetur adipisicing elit. Voluptate atque alias quaerat, assumenda sed officia sequi quas corrupti in et quia dolorem hic quod perspiciatis impedit velit consequuntur repellendus illo modi reprehenderit nihil necessitatibus temporibus a. Itaque deserunt iure exercitationem eius placeat tenetur possimus illo nisi enim eveniet veritatis veniam quis blanditiis quas eos quod eaque cumque, corrupti eum libero vero nihil autem cupiditate officia. Molestias cupiditate veniam quae facilis tempore recusandae architecto sit ullam dignissimos enim officiis expedita rerum dicta, amet, eos natus? Voluptates dolores magni iure cupiditate sed temporibus distinctio in neque deleniti? Ducimus voluptates obcaecati cupiditate iusto?</aside>
+            </div>
+            
+        </section>
+    </main>
+        <!-- Fin Sección "Nosotros" -->
 
-<!-- Inicio Footer -->
-<footer class="footer">
-    <hr>
-    <h4>Todos los derechos reservados</h4>
-    <p>Damian Ferrara</p>
-</footer>
-<!-- Fin Footer -->
+    <!-- Inicio Footer -->
+    <footer class="footer">
+        <div class="footer__derechos" >
+            <h4>Todos los derechos reservados</h4>
+            <p>Damian Ferrara</p>
+        </div>
+        <div class="footer__redes">
+            <i><p>Instagram</p></i>
+            <i><p>Correo</p></i>
+            <i><p>Facebook</p></i>
+        </div>
+    </footer>
+    <!-- Fin Footer -->
 
 </body>
 </html>

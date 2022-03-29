@@ -14,8 +14,8 @@
 <body>
 <!-- Inicio Logo y Nav --> 
 <header class="header">
-    <img src="../img/logomascotas.jpg" alt="Logo" class="header__logo"/>
-    <h2 class="header__titulo">¡Bienvenido a <span>Mascotas Felices</span>!</h2>
+    <a href="../index.html"><img src="../img/logomascotas.jpg" alt="Logo" class="header__logo"/></a>
+    <h2 class="header__titulo">¡Bienvenido a <span>Mascotas Felices!</span></h2>
     <div class="header__buscador">
         <input class="header__buscador--buscar" type="text" placeholder="Buscá tu producto">
         <button class="header__buscador--boton">Buscar</button>
@@ -31,57 +31,56 @@
             <li><a href="../pages/adopta.html">Adopta</a></li>
             <li><a href="../pages/contacto.html">Contacto</a></li>
     </nav>
-    <hr>
+   
 </header>
 <!-- Fin Logo y Nav -->
-<main>
-    <section>
-        <h3 class="contenido__encabezado">Adoptá tu próxima mascota!</h3>
+<main class="alimentos">
+    <section class="contenido__encabezado">
+        <h3 >Adoptá tu próxima mascota!</h3>
             <p class="contenido__encabezado--parrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, officia neque? Dolorem incidunt mollitia quas sed ducimus temporibus exercitationem eum facilis, voluptatum sunt, consectetur repudiandae iure esse qui ipsum a ex repellat, magni quisquam culpa doloremque saepe iusto dolores porro. Repellat, saepe fuga fugiat officiis repellendus eaque odit maiores necessitatibus?</p>
-    <!-- Inicio Tabla -->
-        <table class="tabla" cellspacing="15px">
-            <th class="tabla__encabezado">Mascota</th> <!-- table head "encabezado" -->
-            <th>Nombre</th>
-            <th>Imagen</th>
-            <th>Adoptar</th>
-
-            <tr> <!-- table row - filas -->
-                <td>Perro</td> <!-- table data - informacion/columna -->
-                <td>Toby</td>
-                <td><img src="../img/mascota1.png" alt="tobby"></td>
-                <td><i><img class="comprar" src="../img/adoptar.png" alt="adoptar"></i></td>
-            </tr>
-
-            <tr>
-                <td>Gato</td>
-                <td>Michifus</td>
-                <td><img src="../img/mascota2.png" alt="michifus"></td>
-                <td><i><img class="comprar" src="../img/adoptar.png" alt="adoptar"></i></td>
-            </tr>
-
-            <tr>
-                <td>Loro</td>
-                <td>Pepe</td>
-                <td><img src="../img/mascota3.png" alt="pepe"></td>
-                <td><i><img class="comprar" src="../img/adoptar.png" alt="adoptar"></i></td>
-            </tr>
-
-            <tr>
-                <td>Perro</td>
-                <td>Kuko</td>
-                <td><img src="../img/mascota4.png" alt="kuko"></td>
-                <td><i><img class="comprar" src="../img/adoptar.png" alt="adoptar"></i></td>
-            </tr>
-        </table>
-    <!-- Fin Tabla -->
-    </section>
+    </section>    
+        <!-- Inicio Adopta -->
+          <!-- Adopta -->
+        <div class="producto1">
+            <img src="../img/mascota1.png" alt="mascota1">
+            <p>Toby</p>
+            <p>Perro - 2 años - Tamaño pequeño</p>
+            <i><img class="comprar" src="../img/adoptar.png" alt="adoptar"></i>
+        </div>
+        <div class="producto2">
+            <img src="../img/mascota2.png" alt="mascota2">
+            <p>Michifus</p>
+            <p>Gato - 1 año - Tamaño mediano</p>
+            <i><img class="comprar" src="../img/adoptar.png" alt="adoptar"></i>
+        </div>
+        <div class="producto3">
+            <img src="../img/mascota3.png" alt="mascota3">
+            <p>Pepe</p>
+            <p>Loro - 3 años - Tamaño pequeño</p>
+            <i><img class="comprar" src="../img/adoptar.png" alt="adoptar"></i>
+        </div>
+        <div class="producto4">
+            <img src="../img/mascota4.png" alt="mascota4">
+            <p>Kuko</p>
+            <p>Perro - 10 años - Tamaño grande</p>
+            <i><img class="comprar" src="../img/adoptar.png" alt="adoptar"></i>
+        </div>
+    
+<!-- Fin Adopta -->
+    
 </main>
 
 <!-- Inicio Footer -->
 <footer class="footer">
-    <hr>
-    <h4>Todos los derechos reservados</h4>
-    <p>Damian Ferrara</p>
+    <div class="footer__derechos" >
+        <h4>Todos los derechos reservados</h4>
+        <p>Damian Ferrara</p>
+    </div>
+    <div class="footer__redes">
+        <i><p>Instagram</p></i>
+        <i><p>Correo</p></i>
+        <i><p>Facebook</p></i>
+    </div>
 </footer>
 <!-- Fin Footer -->
 

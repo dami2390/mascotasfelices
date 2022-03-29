@@ -12,78 +12,76 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Orbitron&display=swap" rel="stylesheet">
 </head>
 <body>
-<!-- Inicio Logo y Nav --> 
-<header class="header">
-    <img src="../img/logomascotas.jpg" alt="Logo" class="header__logo"/>
-    <h2 class="header__titulo">¡Bienvenido a <span>Mascotas Felices</span>!</h2>
-    <div class="header__buscador">
-        <input class="header__buscador--buscar" type="text" placeholder="Buscá tu producto">
-        <button class="header__buscador--boton">Buscar</button>
-    </div>
-    <nav class="header__navbar">
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="#">Comprar</a>
-                <ul class="submenu">
-                    <li><a href="../pages/alimentos.html">Alimentos</a></li>
-                    <li><a href="../pages/accesorios.html">Accesorios</a></li>
-                </ul>
-            </li>
-            <li><a href="../pages/adopta.html">Adopta</a></li>
-            <li><a href="../pages/contacto.html">Contacto</a></li>
-    </nav>
-    <hr>
-</header>
-<!-- Fin Logo y Nav -->
-<main>
-    <section>
-        <h3 class="contenido__encabezado">Alimentos</h3>
-            <p class="contenido__encabezado--parrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, officia neque? Dolorem incidunt mollitia quas sed ducimus temporibus exercitationem eum facilis, voluptatum sunt, consectetur repudiandae iure esse qui ipsum a ex repellat, magni quisquam culpa doloremque saepe iusto dolores porro. Repellat, saepe fuga fugiat officiis repellendus eaque odit maiores necessitatibus?</p>
-    <!-- Inicio Tabla -->
-        <table class="tabla" cellspacing="15px">
-            <th class="tabla__encabezado">Alimento</th> <!-- table head "encabezado" -->
-            <th>Peso</th>
-            <th>Precio</th>
-            <th>Comprar</th>
+    <!-- Inicio Logo y Nav --> 
+    <header class="header">
+        <a href="../index.html"><img src="../img/logomascotas.jpg" alt="Logo" class="header__logo"/></a>
+        <h2 class="header__titulo">¡Bienvenido a<span>Mascotas Felices!</span></h2>
+        <div class="header__buscador">
+            <input class="header__buscador--buscar" type="text" placeholder="Buscá tu producto">
+            <button class="header__buscador--boton">Buscar</button>
+        </div>
+        <nav class="header__navbar">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="#">Comprar</a>
+                    <ul class="submenu">
+                        <li><a href="../pages/alimentos.html">Alimentos</a></li>
+                        <li><a href="../pages/accesorios.html">Accesorios</a></li>
+                    </ul>
+                </li>
+                <li><a href="../pages/adopta.html">Adopta</a></li>
+                <li><a href="../pages/contacto.html">Contacto</a></li>
+        </nav>
+    
+    </header>
+    <!-- Fin Logo y Nav -->
+    <main class="alimentos">
+        <section class="contenido__encabezado">
+            <h3>Alimentos</h3>
+                <p class="contenido__encabezado--parrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, officia neque? Dolorem incidunt mollitia quas sed ducimus temporibus exercitationem eum facilis, voluptatum sunt, consectetur repudiandae iure esse qui ipsum a ex repellat, magni quisquam culpa doloremque saepe iusto dolores porro. Repellat, saepe fuga fugiat officiis repellendus eaque odit maiores necessitatibus?</p>
+        </section>
+                <!-- Productos -->
+                <div class="producto1">
+                    <img src="../img/alimento1.png" alt="alimento1">
+                    <p>$1.500</p>
+                    <p>Alimento Perro 15 kg</p>
+                    <i><img class="comprar" src="../img/comprar.png" alt="Comprar"></i>
+                </div>
+                <div class="producto2">
+                    <img src="../img/alimento2.png" alt="alimento1">
+                    <p>$3.000</p>
+                    <p>Alimento Perro 12 kg</p>
+                    <i><img class="comprar" src="../img/comprar.png" alt="Comprar"></i>
+                </div>
+                <div class="producto3">
+                    <img src="../img/alimento3.png" alt="alimento1">
+                    <p>$1.500</p>
+                    <p>Alimento Gato 12 kg</p>
+                    <i><img class="comprar" src="../img/comprar.png" alt="Comprar"></i>
+                </div>
+                <div class="producto4">
+                    <img src="../img/alimento4.png" alt="alimento1">
+                    <p>$1.300</p>
+                    <p>Alimento Perro 5 kg</p>
+                    <i><img class="comprar" src="../img/comprar.png" alt="Comprar"></i>
+                </div>
+            
+        <!-- Fin productos -->
+        
+    </main>
 
-            <tr> <!-- table row - filas -->
-                <td><img src="../img/alimento1.png" alt="alimento1"></td> <!-- table data - informacion/columna -->
-                <td>1,5 kg</td>
-                <td><strong>$1.500</strong></td>
-                <td><i><img class="comprar" src="../img/comprar.png" alt="Comprar"></i></td>
-            </tr>
-
-            <tr>
-                <td><img src="../img/alimento2.png" alt="alimento2"></td>
-                <td>3 kg</td>
-                <td><strong>$3.500</strong></td>
-                <td><i><img class="comprar" src="../img/comprar.png" alt="Comprar"></i></td>
-            </tr>
-
-            <tr>
-                <td><img src="../img/alimento3.png" alt="alimento3"></td>
-                <td>1,5 kg</td>
-                <td><strong>$1.500</strong></td>
-                <td><i><img class="comprar" src="../img/comprar.png" alt="Comprar"></i></td>
-            </tr>
-
-            <tr>
-                <td><img src="../img/alimento4.png" alt="alimento4"></td>
-                <td>2 kg</td>
-                <td><strong>NO DISPONIBLE</strong></td>
-                <td><i><img class="comprar" src="../img/comprar.png" alt="Comprar"></i></td>
-            </tr>
-        </table>
-    <!-- Fin Tabla -->
-    </section>
-</main>
-
-<!-- Inicio Footer -->
-<footer class="footer">
-    <hr>
-    <h4>Todos los derechos reservados</h4>
-    <p>Damian Ferrara</p>
-</footer>
-<!-- Fin Footer -->
+    <!-- Inicio Footer -->
+    <footer class="footer">
+        <div class="footer__derechos" >
+            <h4>Todos los derechos reservados</h4>
+            <p>Damian Ferrara</p>
+        </div>
+        <div class="footer__redes">
+            <i><p>Instagram</p></i>
+            <i><p>Correo</p></i>
+            <i><p>Facebook</p></i>
+        </div>
+    </footer>
+    <!-- Fin Footer -->
 
 </body>
 </html>
