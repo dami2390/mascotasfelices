@@ -4,6 +4,9 @@
     font-family: 'Nunito', sans-serif;
 } /* Reseteo de CSS */
 
+strong { 
+    margin-left: 10px
+}
 .header {
     background-color: rgba(253, 250, 252, 0.712);
     position: sticky;
@@ -183,12 +186,10 @@ section h1 {
     color: #fcfcfe;
 }
 
-hr {
-    border-color: grey;
-    margin-top: 1rem;
-}
 .footer__derechos { 
     grid-area: footer__derechos; 
+    margin-top: 10px;
+    margin-bottom: 5px;
 }
 
 .footer__redes { 
@@ -268,6 +269,16 @@ hr {
 .comprar:hover {
     height: 80px;
 }
+.producto__imagen {
+    height: 200px;
+    width: 200px;
+    transition: 0.5s;
+}
+.producto__imagen:hover {
+    height: 250px;
+    width: 250px;
+}
+
 
 /* Contacto */
 
@@ -282,7 +293,7 @@ hr {
 /*Formulario*/
 
 input[type=text], select, textarea{
-    width: 100%;
+    width: 1fr;
     padding: 12px;
     border: 1px solid grey;
     border-radius: 4px;
@@ -306,6 +317,7 @@ input[type=text], select, textarea{
     cursor: pointer;
     float: right;
     margin: 10px;
+    
   }
   
   
