@@ -293,7 +293,7 @@ section h1 {
 /*Formulario*/
 
 input[type=text], select, textarea{
-    width: 1fr;
+    width: 15rem;
     padding: 12px;
     border: 1px solid grey;
     border-radius: 4px;
@@ -324,7 +324,7 @@ input[type=text], select, textarea{
   .formulario {
     display: grid; 
     grid-template-columns: 10% 20%; 
-    grid-template-rows: 100%; 
+     
     gap: 12px 12px; 
     grid-template-areas: 
       "formulario__columna1 formulario__columna2"
@@ -465,6 +465,19 @@ input[type=text], select, textarea{
         width: 100%;
         margin-top: 0;
       }
+        
+  .formulario {
+    display: grid; 
+    grid-template-columns: 100%; 
+     
+    gap: 12px; 
+    grid-template-areas: 
+      "formulario__columna2"
+      "formulario__columna2"; 
+    margin: 35px;
+
+  }
+  
     label {
         display: none;
     }
