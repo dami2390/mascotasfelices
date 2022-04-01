@@ -9,10 +9,9 @@ strong {
 }
 .header {
     background-color: rgba(253, 250, 252, 0.712);
-    position: sticky;
     top: 0px;
     display: grid; 
-    grid-template-columns: 0.18fr 1fr 1fr; 
+    grid-template-columns: 0.18fr 0.5fr 0.5fr; 
     grid-template-rows: 0.4fr 0.25fr 0.25fr; 
     gap: 0px 0px; 
     row-gap: 20px;
@@ -74,6 +73,7 @@ strong {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    margin-bottom: 5px;
 }
 .header__navbar li{
     background-color:#4cbc8a;
@@ -113,8 +113,7 @@ li:hover {
 
 }
 span {
-    font-size: 30px;
-    margin-left: 10px;
+    background-color: #4cbc8a;
 }
 
 h1, h2, h3, h4, p {
@@ -123,25 +122,32 @@ h1, h2, h3, h4, p {
 /* Seccion Principal */
 .principal {
     display: grid; 
-  grid-template-columns: 1fr 1fr; 
-  grid-template-rows: 0.5fr 1fr; 
+  grid-template-columns: 0.5fr 0.5fr; 
+  grid-template-rows: 1fr 0.5fr; 
   gap: 0px 0px; 
   grid-template-areas: 
     "principal__carousel principal__carousel"
     "principal__nosotros principal__nosotros";
-    width: 100vw; 
+   /*  width: 100vw;  */
 }
 
 /* Carousel */
-.principal__carousel {
-     grid-area: principal__carousel;
+.carousel-contenedor {
+    grid-area: principal__carousel;
+    height: 0.5fr;
+    
+}
+.carousel-propio {
+     
      display: flex;
      flex-wrap: wrap;
-     width: 100vw;
+    /*  width: 100vw;
+     height: 100vh; */
 }
-.principal__carousel--img {
-    width: 100vw;
-    justify-content: center;
+.carousel-propio-img {
+    
+   filter: opacity(80%);
+    
 }
 section h1 {
     margin: 15px;
