@@ -4,28 +4,38 @@
     font-family: 'Nunito', sans-serif;
 } /* Reseteo de CSS */
 
+strong { 
+    margin-left: 10px
+}
 .header {
     background-color: rgba(253, 250, 252, 0.712);
     position: sticky;
     top: 0px;
     display: grid; 
-    grid-template-columns: 0.5fr 1.5fr; 
-    grid-template-rows: 0.5fr 0.5fr 0.5fr; 
+    grid-template-columns: 0.18fr 1fr 1fr; 
+    grid-template-rows: 0.4fr 0.25fr 0.25fr; 
     gap: 0px 0px; 
+    row-gap: 20px;
     grid-template-areas: 
-      "header__logo header__titulo"
-      "header__logo header__buscador"
-      "header__navbar header__navbar"; 
+      "header__logo header__titulo header__titulo"
+      "header__logo header__buscador header__logoanimado"
+      "header__navbar header__navbar header__navbar"; 
       width: 100vw;
 }
 .header__logo {
-    margin: 5px;
+    grid-area: header__logo;
+    margin: 5px; 
+}
+
+.header a img {
     border: 1px solid grey;
     border-radius: 30px;
-    width: 140px; /* Ancho */
-    height: 140px; /* Alto */
-    grid-area: header__logo;
+    width: 170px; /* Ancho */
+    height: 170px; /* Alto */
+    margin-left: 10px;
+    margin-top: 10px;
 }
+
 .header__titulo {
     margin: 15px;
     padding: 10px;
@@ -62,7 +72,7 @@
 .header__navbar {
     grid-area: header__navbar;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
 }
 .header__navbar li{
@@ -176,12 +186,10 @@ section h1 {
     color: #fcfcfe;
 }
 
-hr {
-    border-color: grey;
-    margin-top: 1rem;
-}
 .footer__derechos { 
     grid-area: footer__derechos; 
+    margin-top: 10px;
+    margin-bottom: 5px;
 }
 
 .footer__redes { 
@@ -261,6 +269,16 @@ hr {
 .comprar:hover {
     height: 80px;
 }
+.producto__imagen {
+    height: 200px;
+    width: 200px;
+    transition: 0.5s;
+}
+.producto__imagen:hover {
+    height: 250px;
+    width: 250px;
+}
+
 
 /* Contacto */
 
@@ -275,7 +293,7 @@ hr {
 /*Formulario*/
 
 input[type=text], select, textarea{
-    width: 100%;
+    width: 15rem;
     padding: 12px;
     border: 1px solid grey;
     border-radius: 4px;
@@ -299,13 +317,14 @@ input[type=text], select, textarea{
     cursor: pointer;
     float: right;
     margin: 10px;
+    
   }
   
   
   .formulario {
     display: grid; 
     grid-template-columns: 10% 20%; 
-    grid-template-rows: 100%; 
+     
     gap: 12px 12px; 
     grid-template-areas: 
       "formulario__columna1 formulario__columna2"
@@ -446,6 +465,19 @@ input[type=text], select, textarea{
         width: 100%;
         margin-top: 0;
       }
+        
+  .formulario {
+    display: grid; 
+    grid-template-columns: 100%; 
+     
+    gap: 12px; 
+    grid-template-areas: 
+      "formulario__columna2"
+      "formulario__columna2"; 
+    margin: 35px;
+
+  }
+  
     label {
         display: none;
     }
