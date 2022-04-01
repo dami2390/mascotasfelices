@@ -267,7 +267,7 @@ section h1 {
     transition: 0.5s;
 }
 .comprar:hover {
-    height: 80px;
+    filter: grayscale(100%);
 }
 .producto__imagen {
     height: 200px;
@@ -275,8 +275,7 @@ section h1 {
     transition: 0.5s;
 }
 .producto__imagen:hover {
-    height: 250px;
-    width: 250px;
+    transform: scale(1.2);
 }
 
 
