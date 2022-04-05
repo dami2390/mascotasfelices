@@ -15,11 +15,11 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <script
+<!--     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
-    ></script>
+    ></script> -->
     <!-- Style -->
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -46,17 +46,46 @@
         />
         <button class="header__buscador--boton">Buscar</button>
       </div>
-      <nav class="header__navbar">
-        <li><a href="../index.html">Inicio</a></li>
-        <li>
-          <a href="#">Comprar</a>
-          <ul class="submenu">
-            <li><a href="../pages/alimentos.html">Alimentos</a></li>
-            <li><a href="../pages/accesorios.html">Accesorios</a></li>
-          </ul>
-        </li>
-        <li><a href="../pages/adopta.html">Adopta</a></li>
-        <li><a href="../pages/contacto.html">Contacto</a></li>
+      <nav class="navbar--propio navbar navbar-expand-lg navbar-dark bg-dark ">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse navbar-contenedor" id="navbarNavDropdown">
+            <ul class="navbar-nav navbar-nav-propio">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+              </li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-house-heart" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.707L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.646a.5.5 0 0 0 .708-.707L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5ZM13 7.207l-5-5-5 5V13.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7.207Zm-5-.225C9.664 5.309 13.825 8.236 8 12 2.175 8.236 6.336 5.309 8 6.982Z"/>
+              </svg>
+              <li class="nav-item dropdown">
+                <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Comprar
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="alimentos.html">Alimentos</a></li>
+                  <li><a class="dropdown-item" href="accesorios.html">Accesorios</a></li>
+                </ul>
+              </li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-bag-heart" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5Zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0ZM14 14V5H2v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1ZM8 7.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"/>
+              </svg>
+              <li class="nav-item">
+                <a class="nav-link active" href="adopta.html">Adoptá</a>
+              </li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-box2-heart" viewBox="0 0 16 16">
+                <path d="M8 7.982C9.664 6.309 13.825 9.236 8 13 2.175 9.236 6.336 6.31 8 7.982Z"/>
+                <path d="M3.75 0a1 1 0 0 0-.8.4L.1 4.2a.5.5 0 0 0-.1.3V15a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V4.5a.5.5 0 0 0-.1-.3L13.05.4a1 1 0 0 0-.8-.4h-8.5Zm0 1H7.5v3h-6l2.25-3ZM8.5 4V1h3.75l2.25 3h-6ZM15 5v10H1V5h14Z"/>
+              </svg>
+              <li class="nav-item">
+                <a class="nav-link active" href="contacto.html">Contacto</a>
+              </li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-envelope-paper-heart" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v1.133l.941.502A2 2 0 0 1 16 5.4V14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V5.4a2 2 0 0 1 1.059-1.765L2 3.133V2Zm0 2.267-.47.25A1 1 0 0 0 1 5.4v.817l1 .6v-2.55Zm1 3.15 3.75 2.25L8 8.917l1.25.75L13 7.417V2a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v5.417Zm11-.6 1-.6V5.4a1 1 0 0 0-.53-.882L14 4.267v2.55ZM8 2.982C9.664 1.309 13.825 4.236 8 8 2.175 4.236 6.336 1.31 8 2.982Zm7 4.401-4.778 2.867L15 13.117V7.383Zm-.035 6.88L8 10.082l-6.965 4.18A1 1 0 0 0 2 15h12a1 1 0 0 0 .965-.738ZM1 13.116l4.778-2.867L1 7.383v5.734Z"/>
+              </svg>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
     <!-- Fin Logo y Nav -->
@@ -69,18 +98,13 @@
       <section class="contacto__seccion">
 
         <p class="contenido__encabezado--parrafo">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis,
-          officia neque? Dolorem incidunt mollitia quas sed ducimus temporibus
-          exercitationem eum facilis, voluptatum sunt, consectetur repudiandae
-          iure esse qui ipsum a ex repellat, magni quisquam culpa doloremque
-          saepe iusto dolores porro. Repellat, saepe fuga fugiat officiis
-          repellendus eaque odit maiores necessitatibus?
+            Rellena el formulario indicando el producto de tu interés o las dudas, a la brevedad nuestro equipo se pondrá en contacto con vos.
         </p>
       </section>
       <!-- Formulario -->
 
-      <div>
-        <form action="" class="formulario">
+      <div class="container row form-container">
+        <form action="" class="formulario col">
           <div class="formulario__columna1">
             <label for="nombre">Nombre</label>
             <br />
@@ -102,6 +126,7 @@
             <input type="submit" value="Enviar" />
           </div>
         </form>
+        <iframe class="col" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6559.414177306715!2d-58.268504156253144!3d-34.712567195030154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32e1a9029b48d%3A0x1a4939daa1e6c4a4!2sAv.%20las%20Heras%20149%2C%20Bernal%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1649043669014!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="no" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </main>
     <!-- Fin Formulario -->
@@ -115,6 +140,9 @@
         <a href="#"><img src="../img/whatsapp.png" alt="whatsapp" /></a>
         <a href="#"><img src="../img/facebook.png" alt="facebook" /></a>
         <a href="#"><img src="../img/instagram.png" alt="instagram" /></a>
+      </div>
+      <div class="footer__pagos">
+          <img src="../img/pagos.png" alt="pagos">
       </div>
     </footer>
     <!-- Fin Footer -->

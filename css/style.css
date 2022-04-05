@@ -7,19 +7,21 @@
 strong { 
     margin-left: 10px
 }
+
 .header {
     background-color: rgba(253, 250, 252, 0.712);
     top: 0px;
     display: grid; 
     grid-template-columns: 0.18fr 0.5fr 0.5fr; 
     grid-template-rows: 0.4fr 0.25fr 0.25fr; 
-    gap: 0px 0px; 
+    column-gap: 0px 0px; 
     row-gap: 20px;
     grid-template-areas: 
       "header__logo header__titulo header__titulo"
       "header__logo header__buscador header__logoanimado"
-      "header__navbar header__navbar header__navbar"; 
-      width: 100vw;
+      "navbar--propio navbar--propio navbar--propio"; 
+  /*     width: 100vw; */
+  padding: 0px;
 }
 .header__logo {
     grid-area: header__logo;
@@ -29,14 +31,13 @@ strong {
 .header a img {
     border: 1px solid grey;
     border-radius: 30px;
-    width: 170px; /* Ancho */
-    height: 170px; /* Alto */
-    margin-left: 10px;
-    margin-top: 10px;
+    width: 150px; /* Ancho */
+    height: 150px; /* Alto */
+    margin: 10px;
 }
 
 .header__titulo {
-    margin: 15px;
+    margin: 15px 0px 0px 15px;
     padding: 10px;
     background-color: transparent;
     grid-area: header__titulo;
@@ -68,7 +69,40 @@ strong {
     width: 400px;
     height: 30px;
 }
-.header__navbar {
+nav {
+    width: 100%;
+}
+.navbar--propio {
+    grid-area: navbar--propio;
+    display: flex;
+    flex-direction: row;
+    background-color: #4cbc8a!important;
+    border: 1px solid grey;
+    width: 100vw;
+    align-items: center;
+    
+}
+.navbar-nav-propio {
+    align-items: center;
+    
+}
+.navbar-contenedor {
+    justify-content: center;
+
+}
+.nav-item {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.dropdown-menu {
+    background-color:#4cbc8a!important;
+}
+.dropdown-item {
+    color: white;
+}
+
+
+/* .header__navbar {
     grid-area: header__navbar;
     display: flex;
     justify-content: center;
@@ -81,8 +115,8 @@ strong {
     position: relative;
     margin-right: 1.5rem;
     margin-left: 1.5rem;
-    width: 100px; /* Ancho */
-    height: 40px; /* Alto */
+    width: 100px; 
+    height: 40px; 
     text-align: center;  
     border: 1px solid grey;
     transition: all 0.5s;
@@ -111,7 +145,7 @@ li:hover {
     flex-flow: column wrap;
     justify-content:center;
 
-}
+} */
 span {
     background-color: #4cbc8a;
 }
@@ -129,6 +163,7 @@ h1, h2, h3, h4, p {
     "principal__carousel principal__carousel"
     "principal__nosotros principal__nosotros";
    /*  width: 100vw;  */
+   padding: 0px;
 }
 
 /* Carousel */
@@ -159,6 +194,8 @@ section h1 {
    display: flex;
    flex-direction: row;
    flex-wrap: wap;   
+   justify-content:center;
+   align-items: center;
 
 }
 .principal__nosotros--img img {
@@ -166,7 +203,14 @@ section h1 {
     margin-right: 10px;
     margin-bottom: 10px;
 }
-
+.principal__tira {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    
+}
 /* footer */
 .footer{
     display: inline;
@@ -175,12 +219,13 @@ section h1 {
     color: #fcfcfe;
     display: grid; 
     grid-template-columns: 1fr; 
-    grid-template-rows: 0.5fr 0.5fr; 
+    grid-template-rows: 0.5fr 0.5fr 0.5fr; 
     gap: 0px 0px; 
     grid-template-areas: 
       "footer__derechos"
-      "footer_redes"; 
-    width: 100vw;
+      "footer__redes"
+      "footer__pagos"; 
+    /* width: 100vw; */
     row-gap: 5px;
 }
 .footer h4{
@@ -199,7 +244,7 @@ section h1 {
 }
 
 .footer__redes { 
-    grid-area: footer_redes;
+    grid-area: footer__redes;
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -210,7 +255,14 @@ section h1 {
     margin-left: 10px;
     margin-right: 10px;
 }
-
+.footer__pagos { 
+    grid-area: footer__pagos;
+    
+}
+.footer__pagos img {
+    width: auto;
+    max-width: 80%;
+}
 
 /* Alimentos*/
 .alimentos {
@@ -264,6 +316,7 @@ section h1 {
 .contenido__encabezado--parrafo {
     margin-top: 15px;
     margin-left: 15px;
+    text-align: center;
 }
 
 
@@ -313,7 +366,7 @@ b {
     background-color: rgb(39, 38, 38);
 }
 input[type=text], select, textarea{
-    width: 15rem;
+    width: 20rem;
     padding: 12px;
     border: 1px solid grey;
     border-radius: 4px;
@@ -325,6 +378,7 @@ input[type=text], select, textarea{
   label {
     padding: 12px 12px 12px 0;
     display: inline-block;
+    
   }
   
   
@@ -343,7 +397,7 @@ input[type=text], select, textarea{
   
   .formulario {
     display: grid; 
-    grid-template-columns: 10% 20%; 
+    grid-template-columns: 15% 20%; 
      
     gap: 12px 12px; 
     grid-template-areas: 
@@ -361,8 +415,13 @@ input[type=text], select, textarea{
  
   .formulario__columna2 {
     grid-area: formulario__columna2;
+
   }
-  
+  .form-container {
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+  }
   
  
   
@@ -373,7 +432,7 @@ input[type=text], select, textarea{
         display:flex;
         flex-direction: column;
         align-items:center;
-        position: static;
+       /*  position: static; */
     }
     .header__navbar {
         flex-direction: row;
@@ -388,7 +447,7 @@ input[type=text], select, textarea{
     .principal__carousel{
         display: flex;
         flex-direction: column;
-        width: 100vw;
+      /*   width: 100vw; */
     }
     .principal__nosotros {
         display: flex;
@@ -396,7 +455,7 @@ input[type=text], select, textarea{
     }
    
     .header__buscador {
-        width: 100vw;
+       /*  width: 100vw; */
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -419,7 +478,7 @@ input[type=text], select, textarea{
         display:flex;
         flex-direction: column;
         align-items:center;
-        position: static;
+       /*  position: static; */
         justify-content: center;
         
     }
@@ -446,17 +505,17 @@ input[type=text], select, textarea{
     .principal__carousel{
         display: flex;
         flex-direction: column;
-        width: 100vw;
+      /*   width: 100vw; */
     }
     .principal__nosotros {
         display: flex;
         flex-direction: column;
     }
     .principal__nosotros--img img {
-        width: 100vw;
+       /*  width: 100vw; */
     }
     .header__buscador {
-        width: 100vw;
+        /* width: 100vw; */
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -471,10 +530,7 @@ input[type=text], select, textarea{
         margin: 10px;
         
     }
-    .footer__redes {
-        display: flex;
-        flex-direction: column;
-    }
+   
     .alimentos {
         display: flex;
         flex-direction: column;
@@ -501,4 +557,12 @@ input[type=text], select, textarea{
     label {
         display: none;
     }
+    input[type=text], select, textarea{
+        width: 100%;
+        padding: 12px;
+        border: 1px solid grey;
+        border-radius: 4px;
+        box-sizing: border-box;
+        resize: vertical;
+      }
 }
