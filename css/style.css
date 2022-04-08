@@ -84,6 +84,7 @@ nav {
 }
 .navbar-nav-propio {
     align-items: center;
+    justify-content:center!important;
     
 }
 .navbar-contenedor {
@@ -209,6 +210,7 @@ section h1 {
     text-align: center;
     margin-top: 30px;
     flex-wrap: wrap;
+    justify-content: center;
     
 }
 /* footer */
@@ -268,27 +270,51 @@ section h1 {
 .alimentos {
     display: grid; 
     grid-template-columns: 1fr 1fr; 
-    grid-template-rows: 0.5fr 1fr 1fr; 
+    grid-template-rows: 0.1fr 1fr; 
     gap: 0px 0px; 
     grid-template-areas: 
       "contenido__encabezado contenido__encabezado"
-      "producto1 producto2"
-      "producto3 producto4";
+      "adoptar adoptar";
     width: 100vw;
     
+}
+.adoptar {
+    grid-area: adoptar;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+.btn-propio {
+    background-color:#4cbc8a;
+    border-color: white;
+}
+.btn-propio:hover {
+    background-color:#fcfcfe;
+    border-color: #4cbc8a;
+    color: #4cbc8a;
 }
 .contenido__encabezado {
        grid-area: contenido__encabezado; 
        margin-top: 10px;
        margin-bottom: 10px;
-       width: 100vw;
+       /* width: 100vw; */
+       height: 30%;
 }
 .producto1 { 
       grid-area: producto1;
       display: flex;
       flex-direction: column;
       align-items: center; 
+      justify-content:center;
       margin: 20px;
+}
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 .producto2 { 
       grid-area: producto2; 
@@ -511,11 +537,9 @@ input[type=text], select, textarea{
         display: flex;
         flex-direction: column;
     }
-    .principal__nosotros--img img {
-       /*  width: 100vw; */
-    }
+   
     .header__buscador {
-        /* width: 100vw; */
+        width: 100vw;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -558,7 +582,7 @@ input[type=text], select, textarea{
         display: none;
     }
     input[type=text], select, textarea{
-        width: 100%;
+        width: 50%;
         padding: 12px;
         border: 1px solid grey;
         border-radius: 4px;
