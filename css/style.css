@@ -499,12 +499,11 @@ input[type=text], select, textarea{
 }
 
 /* Tamaño Celular */
-@media screen and (max-width: 526px) {
+/* @media screen and (max-width: 526px) {
     .header {
         display:flex;
         flex-direction: column;
         align-items:center;
-       /*  position: static; */
         justify-content: center;
         
     }
@@ -531,7 +530,7 @@ input[type=text], select, textarea{
     .principal__carousel{
         display: flex;
         flex-direction: column;
-      /*   width: 100vw; */
+
     }
     .principal__nosotros {
         display: flex;
@@ -589,4 +588,4 @@ input[type=text], select, textarea{
         box-sizing: border-box;
         resize: vertical;
       }
-}
+} */
