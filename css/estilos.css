@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* Variables */
 /* Tamaño Celular */
 @media screen and (max-width: 526px) {
   .header {
@@ -54,3 +55,8 @@
     border-radius: 4px;
     box-sizing: border-box;
     resize: vertical; } }
+
+.dropdown-item {
+  background-color: #33d8a6; }
+  .dropdown-item:hover {
+    background-color: orange; }

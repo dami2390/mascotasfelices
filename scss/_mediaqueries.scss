@@ -1,4 +1,10 @@
+/* Variables */
+$color_primario: #33d8a6;
+$color_secundario: orange;
+
+
 /* Tamaño Celular */
+
 @media screen and (max-width: 526px) {
     .header {
       display: flex;
@@ -8,7 +14,7 @@
   
       h2 {
         text-align: center;
-      }
+         }
     }
   
     .header__titulo {
@@ -23,6 +29,7 @@
   
       li {
         margin: 5px;
+        
       }
     }
   
@@ -79,5 +86,12 @@
       border-radius: 4px;
       box-sizing: border-box;
       resize: vertical;
+    }
+  }
+
+  .dropdown-item {
+      background-color: $color_primario;
+      &:hover {
+        background-color: $color_secundario;
     }
   }
