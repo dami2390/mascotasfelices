@@ -1,21 +1,22 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Titan One', cursive;
+    letter-spacing: 1px;
 } /* Reseteo de CSS */
 
 strong { 
-    margin-left: 10px
+    margin-left: 10px;
 }
 
 .header {
-    background-color: rgba(253, 250, 252, 0.712);
+    background-color: #1d998b;
     top: 0px;
     display: grid; 
     grid-template-columns: 0.18fr 0.5fr 0.5fr; 
     grid-template-rows: 0.4fr 0.25fr 0.25fr; 
     column-gap: 0px 0px; 
-    row-gap: 20px;
+    row-gap: 10px;
     grid-template-areas: 
       "header__logo header__titulo header__titulo"
       "header__logo header__buscador header__logoanimado"
@@ -26,13 +27,15 @@ strong {
 .header__logo {
     grid-area: header__logo;
     margin: 5px; 
+    display: flex;
+    justify-content: center;
 }
 
 .header a img {
-    border: 1px solid grey;
-    border-radius: 30px;
-    width: 150px; /* Ancho */
-    height: 150px; /* Alto */
+   
+    
+    width: 145px; /* Ancho */
+    height: 145px; /* Alto */
     margin: 10px;
 }
 
@@ -44,6 +47,7 @@ strong {
     display: flex;
     align-items: center;
     justify-content: left;
+    color: #fff;
 }
 .header__buscador {
     display: flex;
@@ -54,7 +58,7 @@ strong {
     grid-area: header__buscador;
 }
 .header__buscador--boton {
-    background-color: #4cbc8a;
+    background-color: #f07f13;
     color: #fcfcfe;
     border: 1px solid grey;
     border-radius: 5px;
@@ -76,9 +80,9 @@ nav {
     grid-area: navbar--propio;
     display: flex;
     flex-direction: row;
-    background-color: #4cbc8a!important;
-    border: 1px solid grey;
-    width: 100vw;
+    background-color: #1d998b!important;
+   /*  border: 1px solid grey; */
+    /* width: 100vw */;
     align-items: center;
     
 }
@@ -89,6 +93,7 @@ nav {
 }
 .navbar-contenedor {
     justify-content: center;
+    font-size: 15px;
 
 }
 .nav-item {
@@ -96,10 +101,12 @@ nav {
     margin-right: 20px;
 }
 .dropdown-menu {
-    background-color:#4cbc8a!important;
+    background-color:#1d998b!important;
+    
 }
 .dropdown-item {
     color: white;
+    font-size: 15px!important;
 }
 
 
@@ -148,11 +155,19 @@ li:hover {
 
 } */
 span {
-    background-color: #4cbc8a;
+    background-color: #1d998b;
 }
 
-h1, h2, h3, h4, p {
-    font-family: 'Nunito', sans-serif;
+h1, h2, h4 {
+    font-family: 'Titan One', cursive;
+}
+
+h3 {
+    color:#f07f13;
+    text-transform: uppercase;
+}
+h6, small, p {
+    font-family: 'Nunito';
 }
 /* Seccion Principal */
 .principal {
@@ -217,7 +232,7 @@ section h1 {
 .footer{
     display: inline;
     text-align: center;
-    background-color: #4cbc8a;
+    background-color: #1d998b;
     color: #fcfcfe;
     display: grid; 
     grid-template-columns: 1fr; 
@@ -231,11 +246,11 @@ section h1 {
     row-gap: 5px;
 }
 .footer h4{
-    background-color: #4cbc8a;
+    background-color: #1d998b;
     color: #fcfcfe;
 }
 .footer p{
-    background-color: #4cbc8a;
+    background-color: #1d998b;
     color: #fcfcfe;
 }
 
@@ -275,7 +290,7 @@ section h1 {
     grid-template-areas: 
       "contenido__encabezado contenido__encabezado"
       "adoptar adoptar";
-    width: 100vw;
+    /* width: 100vw; */
     
 }
 .adoptar {
@@ -287,13 +302,14 @@ section h1 {
 
 }
 .btn-propio {
-    background-color:#4cbc8a;
+    background-color:#f07f13;
     border-color: white;
+    font-size: 13px;
 }
 .btn-propio:hover {
     background-color:#fcfcfe;
-    border-color: #4cbc8a;
-    color: #4cbc8a;
+    border-color: #1d998b;
+    color: #1d998b;
 }
 .contenido__encabezado {
        grid-area: contenido__encabezado; 
@@ -400,7 +416,6 @@ input[type=text], select, textarea{
     resize: vertical;
   }
   
-  
   label {
     padding: 12px 12px 12px 0;
     display: inline-block;
@@ -409,7 +424,7 @@ input[type=text], select, textarea{
   
   
   input[type=submit] {
-    background-color: #4cbc8a;
+    background-color:#f07f13;
     color: white;
     padding: 12px 20px;
     border: none;
