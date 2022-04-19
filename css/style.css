@@ -173,7 +173,7 @@ h6, small, p {
 .principal {
     display: grid; 
   grid-template-columns: 0.5fr 0.5fr; 
-  grid-template-rows: 1fr 0.5fr; 
+  grid-template-rows: 0.2fr 0.3fr; 
   gap: 0px 0px; 
   grid-template-areas: 
     "principal__carousel principal__carousel"
@@ -186,6 +186,8 @@ h6, small, p {
 .carousel-contenedor {
     grid-area: principal__carousel;
     height: 0.5fr;
+   
+    
     
 }
 .carousel-propio {
@@ -194,10 +196,11 @@ h6, small, p {
      flex-wrap: wrap;
     /*  width: 100vw;
      height: 100vh; */
+   
 }
 .carousel-propio-img {
     
-   filter: opacity(80%);
+   filter: opacity(85%);
     
 }
 section h1 {
@@ -211,7 +214,7 @@ section h1 {
    flex-direction: row;
    flex-wrap: wap;   
    justify-content:center;
-   align-items: center;
+  /*  align-items: center; */
 
 }
 .principal__nosotros--img img {
