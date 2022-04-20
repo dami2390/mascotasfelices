@@ -60,3 +60,30 @@
   background-color: #1d998b; }
   .dropdown-item:hover {
     background-color: #f07f13; }
+
+/* Redes con MAPS */
+.redes--whatsapp {
+  background-color: green;
+  border-radius: 100%; }
+
+.redes--facebook {
+  background-color: blue;
+  border-radius: 100%; }
+
+.redes--instagram {
+  background-color: orange;
+  border-radius: 100%; }
+
+/* Extend */
+.redes, .redes--whatsapp:hover {
+  width: 35px;
+  height: 35px; }
+
+.redes--whatsapp:hover {
+  filter: grayscale(80%); }
+
+/* Mixins */
+.redes, .redes--whatsapp:hover {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }

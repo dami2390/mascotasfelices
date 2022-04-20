@@ -467,7 +467,10 @@ input[type=text], select, textarea{
       margin: 0;
   }
   
- 
+ .img--whatsapp {
+    background-color: rgb(0, 255, 34);
+    border-radius:100%;
+ }
   
 
 /* Tamaño Tablet */

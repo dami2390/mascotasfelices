@@ -1,0 +1,39 @@
+
+
+/* Redes con MAPS */
+
+$redes: (
+    whatsapp: green,
+    facebook: blue,
+    instagram: orange
+);
+
+@each $red, $color in $redes {
+    .redes--#{$red} {
+        background-color: $color;
+        border-radius: 100%;
+    }
+}
+
+/* Extend */
+
+.redes {
+    width:35px;
+	height:35px;
+
+}
+.redes--whatsapp:hover {
+    @extend.redes;
+    filter: grayscale(80%)
+}
+
+/* Mixins */
+
+@mixin flex{
+	display:flex;
+	flex-direction:row;
+	justify-content:center;
+}
+.redes {
+   @include flex;
+}
