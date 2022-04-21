@@ -59,7 +59,9 @@
     margin: 0; }
   .header__buscador--buscar {
     width: 75% !important;
-    margin: 10px; } }
+    margin: 10px; }
+  .navbar--propio {
+    margin-top: 15px; } }
 
 .dropdown-item {
   background-color: #1d998b; }
