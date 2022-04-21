@@ -72,7 +72,13 @@ strong {
     border: 1px solid grey;
     width: 400px;
     height: 30px;
+    font-size: 12px;
+ 
 }
+::placeholder{
+    color: rgb(173, 173, 173);
+}
+
 nav {
     width: 100%;
 }
@@ -404,12 +410,10 @@ section h1 {
     margin-top: 20px;
     
 }
-b {
-    width: 15%;
-    height: 3px;
-    opacity: .1;
-    background-color: rgb(39, 38, 38);
+.mapa {
+    margin: 10px;
 }
+
 input[type=text], select, textarea{
     width: 20rem;
     padding: 12px;
@@ -422,6 +426,8 @@ input[type=text], select, textarea{
   label {
     padding: 12px 12px 12px 0;
     display: inline-block;
+    color: #1d998b;
+    
     
   }
   
@@ -433,7 +439,7 @@ input[type=text], select, textarea{
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    float: right;
+    float: left;
     margin: 10px;
     
   }
@@ -441,7 +447,7 @@ input[type=text], select, textarea{
   
   .formulario {
     display: grid; 
-    grid-template-columns: 15% 20%; 
+    grid-template-columns: 0.5fr 1fr; 
      
     gap: 12px 12px; 
     grid-template-areas: 
@@ -464,7 +470,8 @@ input[type=text], select, textarea{
   .form-container {
       align-items: center;
       justify-content: center;
-      margin: 0;
+      /* margin: 0; */
+      margin-left: 30px;
   }
   
  .img--whatsapp {

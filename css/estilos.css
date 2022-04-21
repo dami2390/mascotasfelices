@@ -49,12 +49,17 @@
   label {
     display: none; }
   input[type=text], select, textarea {
-    width: 50%;
+    width: 100%;
     padding: 12px;
     border: 1px solid grey;
     border-radius: 4px;
     box-sizing: border-box;
-    resize: vertical; } }
+    resize: vertical; }
+  .form-container {
+    margin-left: 0; }
+  input[type=submit] {
+    float: none;
+    margin: 0; } }
 
 .dropdown-item {
   background-color: #1d998b; }
