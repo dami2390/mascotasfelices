@@ -50,10 +50,7 @@ $color_secundario: #f07f13;
       margin: 10px;
     }
   
-    .header__buscador--buscar {
-      width: 75%;
-      margin: 10px;
-    }
+  
   
     .alimentos {
       display: flex;
@@ -93,6 +90,10 @@ $color_secundario: #f07f13;
     input[type=submit] {
       float: none;
       margin: 0;
+    }
+    .header__buscador--buscar {
+      width: 75%!important;
+      margin: 10px;
     }
   }
 
