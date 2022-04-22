@@ -88,7 +88,7 @@ nav {
     display: flex;
     flex-direction: row;
     background-color: #1d998b!important;
-   /*  border: 1px solid grey; */
+    border-bottom: 1px solid grey;
     /* width: 100vw */;
     align-items: center;
     
@@ -605,8 +605,7 @@ input[type=text], select, textarea{
   .form-container {
       align-items: center;
       justify-content: center;
-      /* margin: 0; */
-      margin-left: 30px;
+      
   }
   
  .img--whatsapp {
