@@ -10,7 +10,9 @@
     .header h2 {
       text-align: center; }
   .header__titulo {
-    flex-direction: column; }
+    flex-direction: column;
+    justify-content: center;
+    text-align: center; }
   .header__navbar {
     display: flex;
     flex-direction: column;
@@ -61,7 +63,12 @@
     width: 75% !important;
     margin: 10px; }
   .navbar--propio {
-    margin-top: 15px; } }
+    margin-top: 15px;
+    justify-content: center !important; }
+  .navbar-contenedor {
+    justify-content: center !important; }
+  .navbar-nav-propio {
+    justify-content: center !important; } }
 
 .dropdown-item {
   background-color: #1d998b; }

@@ -13,48 +13,52 @@ strong {
     background-color: #1d998b;
     top: 0px;
     display: grid; 
-    grid-template-columns: 0.18fr 0.5fr 0.5fr; 
-    grid-template-rows: 0.4fr 0.25fr 0.25fr; 
+    grid-template-columns: 15% 55% 30%; 
+    grid-template-rows: 70% 30%; 
     column-gap: 0px 0px; 
     row-gap: 10px;
     grid-template-areas: 
-      "header__logo header__titulo header__titulo"
-      "header__logo header__buscador header__logoanimado"
-      "navbar--propio navbar--propio navbar--propio"; 
+      "header__logo header__titulo header__buscador"
+      "header__logo navbar--propio navbar--propio"; 
   /*     width: 100vw; */
   padding: 0px;
+  margin-bottom: 10px;
 }
 .header__logo {
     grid-area: header__logo;
-    margin: 5px; 
+    /* margin: 5px; */ 
     display: flex;
     justify-content: center;
+    align-items: center;
+    background-color: #1d998b;
 }
 
 .header a img {
    
     
-    width: 145px; /* Ancho */
-    height: 145px; /* Alto */
-    margin: 10px;
+    width: 130px; /* Ancho */
+    height: 130px; /* Alto */
+    /* margin-top: 15px;
+    margin-bottom: 5px; */
 }
 
 .header__titulo {
-    margin: 15px 0px 0px 15px;
-    padding: 10px;
+    margin-top: 15px;
     background-color: transparent;
     grid-area: header__titulo;
     display: flex;
     align-items: center;
-    justify-content: left;
+    justify-content: flex-start;
     color: #fff;
+    
 }
 .header__buscador {
     display: flex;
-    justify-content: flex-start;
-    margin:10px;
-    height: 50px;
-    width: 500px;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top:10px;
+    
+    width: 80%;
     grid-area: header__buscador;
     column-gap: 10px;
 }
@@ -88,25 +92,31 @@ nav {
     display: flex;
     flex-direction: row;
     background-color: #1d998b!important;
-    border-bottom: 1px solid grey;
+    justify-content: flex-start!important;
+   
     /* width: 100vw */;
-    align-items: center;
+    
     
     
 }
 .navbar-nav-propio {
     align-items: center;
-    justify-content:center!important;
+    display: flex;
+    justify-content:flex-start!important;
+    padding: 0;
     
 }
 .navbar-contenedor {
-    justify-content: center;
+    justify-content: flex-start;
     font-size: 15px;
 
 }
 .nav-item {
-    margin-left: 20px;
-    margin-right: 20px;
+    /* margin-left: 20px;
+    margin-right: 20px; */
+}
+svg {
+    margin-right: 25px;
 }
 .dropdown-menu {
     background-color:#1d998b!important;
@@ -116,52 +126,6 @@ nav {
     color: white;
     font-size: 15px!important;
 }
-
-
-/* .header__navbar {
-    grid-area: header__navbar;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-bottom: 5px;
-}
-.header__navbar li{
-    background-color:#4cbc8a;
-    display: flex;
-    position: relative;
-    margin-right: 1.5rem;
-    margin-left: 1.5rem;
-    width: 100px; 
-    height: 40px; 
-    text-align: center;  
-    border: 1px solid grey;
-    transition: all 0.5s;
-    align-items: center;
-    justify-content: center
-    
-}
-
-.header__navbar li a{
-    text-decoration: none;
-    color: #fcfcfe;
-}
-
-.submenu {
-    display: none;
-    position: absolute;
-
-}
-li:hover {
-    background-color: #78daad;
-    width: 100px;
-        
-}
-.header__navbar li:hover ul {
-    display:flex;
-    flex-flow: column wrap;
-    justify-content:center;
-
-} */
 
 
 h1, h2, h4 {
@@ -233,6 +197,7 @@ section h1 {
     flex-direction: row;
     text-align: center;
     margin-top: 30px;
+    margin-bottom: 30px;
     flex-wrap: wrap;
     justify-content: center;
     
@@ -307,6 +272,10 @@ section h1 {
       "adoptar adoptar";
     /* width: 100vw; */
     
+}
+a {
+    text-decoration: none;
+    color:#1d998b;
 }
 .adoptar {
     grid-area: adoptar;
@@ -493,6 +462,7 @@ section h1 {
     margin-top: 15px;
     margin-left: 15px;
     text-align: center;
+    margin-bottom: 0;
 }
 
 
@@ -612,6 +582,10 @@ input[type=text], select, textarea{
     background-color: rgb(0, 255, 34);
     border-radius:100%;
  }
+ .img-propia {
+     width: 250px;
+     height: 230px;
+ }
   
 
 /* Tamaño Tablet */
@@ -658,6 +632,9 @@ input[type=text], select, textarea{
         margin: 10px;
         
     }
+    .navbar-nav-propio {
+        justify-content: center!important;
+        }
 }
 
 /* Tamaño Celular */

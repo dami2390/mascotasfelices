@@ -19,6 +19,8 @@ $color_secundario: #f07f13;
   
     .header__titulo {
       flex-direction: column;
+      justify-content: center;
+      text-align: center;
     }
   
     .header__navbar {
@@ -98,9 +100,16 @@ $color_secundario: #f07f13;
     .navbar--propio {
      
       margin-top: 15px;
+      justify-content: center!important;
       
-  }
-  }
+    }
+    .navbar-contenedor {
+    justify-content: center!important;
+    }
+    .navbar-nav-propio {
+    justify-content: center!important;
+    }
+    }
 
   .dropdown-item {
       background-color: $color_primario;
